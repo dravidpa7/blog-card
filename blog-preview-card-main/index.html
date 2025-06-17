@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+      @font-face {
+      font-family: 'Figtree';
+      src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+      font-weight: 100 900;
+      font-style: normal;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Figtree', sans-serif;
+      background-color: hsl(47, 88%, 63%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid black;
+      box-shadow: 8px 8px 0 black;
+      border-radius: 20px;
+      max-width: 375px;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-image {
+      /* width: 100%; */
+      display: block;
+      width: 100%;
+      padding: 1.5rem;
+      border-radius: 2.5rem;
+      /* border-top-left-radius: 20px;
+      border-top-right-radius: 20px; */
+    }
+
+    .card-content {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .tag {
+      background-color: hsl(47, 88%, 63%);
+      color: black;
+      font-weight: 800;
+      font-size: 0.75rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: 5px;
+      width: fit-content;
+    }
+
+    .date {
+      font-size: 0.75rem;
+      color: hsl(0, 0%, 30%);
+    }
+
+    .title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .title:hover {
+      color: hsl(47, 88%, 63%);
+    }
+
+    .description {
+      font-size: 0.875rem;
+      color: hsl(0, 0%, 50%);
+      line-height: 1.5;
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+    
+</style>
+</head>
+<body style="background-color: #f4d04e ;">
+<main class="card">
+      <img src="./assets/images/illustration-article.svg" alt="Blog Image" class="card-image" />
+
+      <div class="card-content">
+        <span class="tag">Learning</span>
+        <p class="date">Published 21 Dec 2023</p>
+        <h2 class="title">HTML & CSS foundations</h2>
+        <p class="description">
+          These languages are the backbone of every website, defining structure, content, and presentation.
+        </p>
+        <div class="author">
+          <img src="./assets/images/image-avatar.webp" alt="Author" class="avatar" />
+          <p>Greg Hooper</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
